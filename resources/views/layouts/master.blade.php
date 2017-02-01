@@ -1,7 +1,15 @@
+<!-- Stored in resources/views/layouts/master.blade.php -->
+
 <!DOCTYPE html>
 <html lang="{{ config('app.locale') }}">
     
-    @include('partials.head')
+    <head>
+
+        @include('partials.head')
+
+        <title>Monkishtypist - @yield('title')</title>
+
+    </head>
     
     <body>
         <div class="flex-center position-ref full-height">
@@ -20,7 +28,9 @@
             
             <div class="content">
                 <div class="container-fluid">
-                @include('pages.'.$page_file)
+                
+                    @yield('content')
+
                 </div>
             </div>
         

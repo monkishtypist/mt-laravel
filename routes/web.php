@@ -12,9 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('main', ['page_file' => 'home']);
+    return view('pages.home');
 });
 Route::get('/about', function () {
-    return view('main', ['page_file' => 'about']);
+    return view('pages.about');
 });
 

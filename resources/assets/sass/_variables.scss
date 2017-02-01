@@ -3,7 +3,11 @@
 $body-bg: #f5f8fa;
 
 // Borders
-$laravel-border-color: darken($body-bg, 10%);
+$border-radius-base:        0px !default;
+$border-radius-large:       0px !default;
+$border-radius-small:       0px !default;
+
+$laravel-border-color: transparent;
 $list-group-border: $laravel-border-color;
 $navbar-default-border: $laravel-border-color;
 $panel-default-border: $laravel-border-color;
@@ -20,13 +24,15 @@ $brand-danger: #bf5329;
 $font-family-sans-serif: "Raleway", sans-serif;
 $font-size-base: 16px;
 $line-height-base: 1.6;
-$text-color: #636b6f;
+$text-color: #fff;
 
 // Navbar
-$navbar-default-bg: #fff;
+$navbar-default-bg: transparent;
 
 // Buttons
-$btn-default-color: $text-color;
+$btn-default-color:              $text-color !default;
+$btn-default-bg:                 transparent !default;
+$btn-default-border:             #fff !default;
 
 // Inputs
 $input-border: lighten($text-color, 40%);

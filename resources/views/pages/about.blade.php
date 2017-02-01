@@ -1,3 +1,11 @@
+@extends('layouts.master')
+
+
+@section('title', 'About')
+
+
+@section('content')
+
 <div class="row">
     <div class="col-md-12">
       <!-- start slipsum code -->
@@ -5,3 +13,5 @@
       <!-- end slipsum code -->
     </div>
 </div>
+
+@stop

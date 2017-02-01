@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="{{ url('/') }}">Monkishtypist</a>
+      <!-- <a class="navbar-brand" href="{{ url('/') }}">Monkishtypist</a> -->
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -16,7 +16,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a class="{{ Request::is('/') ? 'active' : '' }}" href="{{ url('/') }}">Home</a></li>
         <li><a class="{{ Request::is('about') ? 'active' : '' }}" href="{{ url('about') }}">About</a></li>
-        <li><a class="{{ Request::is('cv') ? 'active' : '' }}" href="{{ url('cv') }}">Curriculum Vitae</a></li>
+        <li><a class="{{ Request::is('contact') ? 'active' : '' }}" href="{{ url('contact') }}">Contact</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
