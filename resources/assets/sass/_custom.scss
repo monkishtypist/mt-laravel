@@ -1,0 +1,58 @@
+
+html {
+  min-height: 100vh;
+  body {
+    background: url('/images/tim-split.jpg') no-repeat 0 50%;
+    background-size: cover;
+    color: $text-color;
+    min-height: 100vh;
+    .navbar-default {
+      .navbar-header {
+        height: 50px;
+      }
+      .navbar-collapse {
+        box-shadow: none;
+      }
+      .navbar-nav > li > a {
+        border-bottom: 2px solid transparent;
+        box-sizing: border-box;
+        color: $text-color;
+      }
+      .navbar-nav > li > a:hover, 
+      .navbar-nav > li > a:focus,
+      .navbar-nav > li > a.active, {
+        border-bottom: 2px solid white;
+        color: $text-color;
+      }
+      .navbar-toggle {
+        background-color: transparent;
+        border-color: transparent;
+
+        .icon-bar {
+          background-color: #fff;
+        }
+      }
+      .navbar-toggle:hover,
+      .navbar-toggle:focus {
+        background-color: transparent;
+      }
+      .navbar-toggle[aria-expanded="true"] {
+        .icon-bar:nth-child(2) {
+          margin-top: 5px;
+          transform: rotate(45deg);
+        }
+        .icon-bar:nth-child(3) {
+          background-color: transparent;
+        }
+        .icon-bar:nth-child(4) {
+          margin-top: -8px;
+          transform: rotate(-45deg);
+        }
+      }
+
+    }
+    div[class~="container"] {
+      height: 100%;
+    }
+  }
+}
