@@ -7,16 +7,18 @@
 
         @include('partials.head')
 
-        <title>Monkishtypist - @yield('title')</title>
+        <title>Monkish Typist - @yield('title')</title>
 
     </head>
     
     <body>
             
-        @include('partials.nav')
-            
+        {{-- @include('partials.nav') --}}
+
+        @include('partials.headline')
+
         <div class="container-fluid">
-            
+
             @yield('content')
 
         </div>

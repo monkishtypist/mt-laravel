@@ -1,43 +1,51 @@
 
 // Body
-$body-bg: #f5f8fa;
+$body-bg:                         #bf3f61;
 
 // Borders
-$border-radius-base:        0px !default;
-$border-radius-large:       0px !default;
-$border-radius-small:       0px !default;
+$border-radius-base:              0px !default;
+$border-radius-large:             0px !default;
+$border-radius-small:             0px !default;
 
-$laravel-border-color: transparent;
-$list-group-border: $laravel-border-color;
-$navbar-default-border: $laravel-border-color;
-$panel-default-border: $laravel-border-color;
-$panel-inner-border: $laravel-border-color;
+$laravel-border-color:            transparent;
+$list-group-border:               $laravel-border-color;
+$navbar-default-border:           $laravel-border-color;
+$panel-default-border:            $laravel-border-color;
+$panel-inner-border:              $laravel-border-color;
 
 // Brands
-$brand-primary: #3097D1;
-$brand-info: #8eb4cb;
-$brand-success: #2ab27b;
-$brand-warning: #cbb956;
-$brand-danger: #bf5329;
+$brand-primary:                   #bf3f61;
+$brand-info:                      #517c8c;
+$brand-success:                   #498c37;
+$brand-warning:                   #d99a25;
+$brand-danger:                    #d98282;
+
+// Fonts
+$icon-font-path:                  "~bootstrap-sass/assets/fonts/bootstrap/";
 
 // Typography
-$font-family-sans-serif: "Raleway", sans-serif;
-$font-size-base: 16px;
-$line-height-base: 1.6;
-$text-color: #fff;
+$font-family-sans-serif:          "Ubuntu", Arial, sans-serif;
+$font-size-base:                  16px;
+$line-height-base:                1.6;
+$text-color:                      #fff;
+
+$headings-font-family:            "Audiowide";
+
+$font-size-h1:                    floor(($font-size-base * 4)) !default; // ~36px
 
 // Navbar
-$navbar-default-bg: transparent;
+$navbar-default-bg:               transparent;
+$navbar-default-link-color:       #fff !default;
 
 // Buttons
-$btn-default-color:              $text-color !default;
-$btn-default-bg:                 transparent !default;
-$btn-default-border:             #fff !default;
+$btn-default-color:               $text-color !default;
+$btn-default-bg:                  transparent !default;
+$btn-default-border:              #fff !default;
 
 // Inputs
-$input-border: lighten($text-color, 40%);
-$input-border-focus: lighten($brand-primary, 25%);
-$input-color-placeholder: lighten($text-color, 30%);
+$input-border:                    lighten($text-color, 40%);
+$input-border-focus:              lighten($brand-primary, 25%);
+$input-color-placeholder:         lighten($text-color, 30%);
 
 // Panels
-$panel-default-heading-bg: #fff;
+$panel-default-heading-bg:        #fff;
