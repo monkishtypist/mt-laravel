@@ -1,10 +1,14 @@
-<div id="copyright" class="container-fluid">
-  <div class="row">
-    <div class="col-sm-12">
-      <p class="text-right">&copy; 2017, built by Monkishtypist using Laravel 5.4</p>
-    </div>
-  </div>
-</div>
+<footer>
+	<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="nav navbar-nav mx-auto list-inline">
+				<li class="nav-item list-inline-item"><a class="nav-link {{ Request::is('/') ? 'active' : '' }}" href="#">Home <span class="sr-only">(current)</span></a></li>
+				<li class="nav-item list-inline-item"><a class="nav-link {{ Request::is('about') ? 'active' : '' }}" href="{{ url('about') }}">About</a></li>
+				<li class="nav-item list-inline-item"><a class="nav-link {{ Request::is('contact') ? 'active' : '' }}" href="{{ url('contact') }}">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+</footer>
 
 <!-- Footer Scripts etc -->
 

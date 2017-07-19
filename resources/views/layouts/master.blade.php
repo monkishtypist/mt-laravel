@@ -13,9 +13,9 @@
     
     <body>
             
-        {{-- @include('partials.nav') --}}
+        @include('partials.nav')
 
-        @include('partials.headline')
+        {{-- @include('partials.headline') --}}
 
         <div class="container-fluid">
 
