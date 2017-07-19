@@ -246,7 +246,7 @@ $grid-gutter-widths: (
 // Font, line-height, and color for body text, headings, and more.
 
 $font-family-sans-serif: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
-$font-family-serif:      Georgia, "Times New Roman", Times, serif !default;
+$font-family-serif:      Merriweather, Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:       $font-family-sans-serif !default;
 
@@ -261,7 +261,7 @@ $font-weight-bold: bold !default;
 $font-weight-base: $font-weight-normal !default;
 $line-height-base: 1.5 !default;
 
-$font-size-h1: 2.5rem !default;
+$font-size-h1: 10rem !default; // 2.5rem !default;
 $font-size-h2: 2rem !default;
 $font-size-h3: 1.75rem !default;
 $font-size-h4: 1.5rem !default;
@@ -269,8 +269,8 @@ $font-size-h5: 1.25rem !default;
 $font-size-h6: 1rem !default;
 
 $headings-margin-bottom: ($spacer / 2) !default;
-$headings-font-family:   inherit !default;
-$headings-font-weight:   500 !default;
+$headings-font-family:   $font-family-serif !default; // inherit !default;
+$headings-font-weight:   900 !default; // 500 !default;
 $headings-line-height:   1.1 !default;
 $headings-color:         inherit !default;
 

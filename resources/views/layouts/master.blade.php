@@ -13,7 +13,7 @@
     
     <body>
             
-        @include('partials.nav')
+        {{-- @include('partials.nav') --}}
 
         {{-- @include('partials.headline') --}}
 

@@ -1,0 +1,29 @@
+body {
+	background-image: url('../images/lake-view-from-above.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+}
+
+h1 {
+	color: #ffd204;
+	text-shadow: 
+		-1px 0 #e11b22, 
+		0 1px #e11b22, 
+		1px 0 #e11b22, 
+		0 -1px #e11b22,
+		0.1rem 0.1rem #e11b22,
+		0.15rem 0.15rem #e11b22,
+		0.2rem 0.2rem #e11b22,
+		0.25rem 0.25rem #e11b22,
+		0.3rem 0.3rem #e11b22,
+		0.35rem 0.35rem #e11b22,
+		0.4rem 0.4rem #e11b22,
+		0.45rem 0.45rem #e11b22,
+		0.5rem 0.5rem #e11b22;
+	letter-spacing: -0.75rem;
+}
+h2 {
+	font-family: Arial;
+	text-transform: uppercase;
+}
