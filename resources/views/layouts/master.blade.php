@@ -11,7 +11,7 @@
 
     </head>
     
-    <body>
+    <body class="bg-<?php print( rand(1,5) ); ?>">
             
         {{-- @include('partials.nav') --}}
 
