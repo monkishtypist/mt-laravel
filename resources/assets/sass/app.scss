@@ -1,6 +1,7 @@
 
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Merriweather:400,700,900|Playfair+Display|Roboto+Condensed:400,400i,700');
+@import "node_modules/font-awesome/scss/font-awesome";
 
 // Variables
 @import "variables";
@@ -11,3 +12,7 @@
 
 // Custom CSS
 @import "custom";
+@import "nav";
+@import "home";
+@import "about";
+@import "work";

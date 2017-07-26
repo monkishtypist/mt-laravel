@@ -11,18 +11,10 @@
 
     </head>
     
-    <body class="bg-<?php print( rand(1,5) ); ?>">
+    <body class="">
             
-        {{-- @include('partials.nav') --}}
+        @yield('content')
 
-        {{-- @include('partials.headline') --}}
-
-        <div class="container-fluid">
-
-            @yield('content')
-
-        </div>
-        
         @include('partials.footer')
 
     </body>

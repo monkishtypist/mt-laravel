@@ -1,240 +1,50 @@
-body {
-	background-attachment: fixed;
-	background-image: url('../images/rusty-barn.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	min-height: 100vh;
-	&.bg-1 {
-		background-image: url('../images/boats-bay.jpg');
-	}
-	&.bg-2 {
-		background-image: url('../images/lake-view-from-above.jpg');
-	}
-	&.bg-3 {
-		background-image: url('../images/rusty-barn.jpg');
-	}
-	&.bg-4 {
-		background-image: url('../images/wandering-creek.jpg');
-	}
-	&.bg-5 {
-		background-image: url('../images/washed-out-beach.jpg');
-	}
+
+
+// Transitions
+.component-fade-enter-active, .component-fade-leave-active {
+  // transition: opacity 0.25s ease;
+}
+.component-fade-enter, .component-fade-leave-to
+/* .component-fade-leave-active below version 2.1.8 */ {
+  // opacity: 0;
 }
 
-.hilite {
-	background-color: $black;
-}
-
-header {
-	h1 {
-		color: $yellow;
-		font-family: $font-family-serif;
-		font-weight: 900;
-		letter-spacing: -0.75rem;
-		line-height: 10rem;
-		text-shadow: 
-			-1px -1px $black, 
-			1px 1px $black, 
-			2px 2px $yellow, 
-			0.1rem 0.1rem $red,
-			0.15rem 0.15rem $red,
-			0.2rem 0.2rem $red,
-			0.25rem 0.25rem $red,
-			0.3rem 0.3rem $red,
-			0.35rem 0.35rem $red,
-			0.4rem 0.4rem $red,
-			0.45rem 0.45rem $red,
-			0.5rem 0.5rem $red;
-	}
-	h2 {
-		color: $black;
-		.name {
-			font-weight: 600;
-		}
-	}
-}
-
-#about {
-	h2 {
-		color: $blue;
-		font-family: "Playfair Display";
-		font-size: 5rem;
-		font-weight: 400;
-		line-height: 4rem;
-		margin-left: 16rem;
-		text-indent: -16rem;
-		text-shadow: 
-			-1px -1px $black,
-			1px 1px $white, 
-			2px 2px $blue,
-			3px 3px $blue;
-	}
-}
-#work {
-	h2 {
-		color: $yellow;
-		font-family: "Playfair Display";
-		font-size: 6rem;
-		font-weight: 400;
-		line-height: 4.4rem;
-		margin-left: 16rem;
-		text-indent: -16rem;
-		text-shadow: 
-			-1px -1px $black,
-			1px 1px $white, 
-			2px 2px $yellow,
-			3px 3px $yellow,
-			4px 4px $black;
-	}
-	ul {
-		li {
-			h3 {
-				display: inline-block;
-				margin-bottom: 0;
-				text-shadow:
-					1px 0px $black,
-					0px 1px $black,
-					-1px 0px $black,
-					0px -1px $black;
-			}
-			h4 {
-				color: $blue;
-				display: inline-block;
-				margin-bottom: 0;
-				text-shadow:
-					1px 0px $black,
-					0px 1px $black,
-					-1px 0px $black,
-					0px -1px $black;
-			}
-		}
-	}
-}
-#skillz {
-	h3 {
-		font-size: 3rem;
-		line-height: 4rem;
-		.badge {
-			color: $white;
-			display: inline-block;
-			font-family: "Playfair Display";
-			font-size: 9rem;
-			line-height: 4.2rem;
-			text-shadow:
-				3px 0px $red,
-				0px 3px $red,
-				-3px 0px $red,
-				0px -3px $red;
-		}
-		.hilite {
-			background-color: $blue;
-			.font-italic {
-				color: $yellow;
-				font-weight: 700;
-			}
-			&.soft-skills {
-				background-color: $yellow;
-				color: $blue;
-				.font-italic {
-					color: $blue;
-				}
-			}
-		}
-	}
-	ul {
-		li {
-			span {
-			}
-		}
-	}
-}
-footer {
+// Typography
+.anaglyph {
+	color: rgba($red, 0.55);
+	font-family: $font-family-sans-serif;
+	text-shadow: 0.25rem 0.25rem rgba($teal, 0.55);
 	a {
-		text-shadow: 
-			1px 0 $black,
-			0 1px $black,
-			-1px 0 $black,
-			0 -1px $black;
+		@extend .anaglyph;
 	}
 }
-
-@media screen and (max-width: map-get($grid-breakpoints, lg)) {
-	header {
-		h1 {
-			font-size: 8.5rem;
-			letter-spacing: -0.5rem;
-			line-height: 5rem;
-			margin-bottom: 1rem;
-		}
-	}
-	#about {
-		h2 {
-			font-size: 3rem;
-			line-height: 2.75rem;
-			margin-left: 0;
-			text-indent: 0;
-		}
-	}
-	#work {
-		h2 {
-			font-size: 3rem;
-			line-height: 2.75rem;
-			margin-left: 0;
-			text-indent: 0;
-		}
+.anaglyph-dark {
+	color: rgba(mix($red, $blue), 0.6);
+	font-family: $font-family-sans-serif;
+	text-shadow: -0.125rem 0rem rgba($red, 1), 0.125rem 0.125rem rgba($teal, 1);
+	a {
+		@extend .anaglyph-dark;
 	}
 }
-@media screen and (max-width: map-get($grid-breakpoints, md)) {
-	header {
-		h1 {
-			font-size: 6rem;
-			letter-spacing: -0.5rem;
-			line-height: 5rem;
-			margin-bottom: 2rem;
-		}
-	}
-	#about {
-		h2 {
-			font-size: 3.5rem;
-			line-height: 2.75rem;
-			margin-bottom: 2rem;
-			margin-left: 0;
-			text-indent: 0;
-		}
-	}
-	#work {
-		h2 {
-			font-size: 3.5rem;
-			line-height: 2.75rem;
-			margin-bottom: 2rem;
-			margin-left: 0;
-			text-indent: 0;
-		}
-	}
-}
-@media screen and (max-width: map-get($grid-breakpoints, sm)) {
-	header {
-		h1 {
-			font-size: 5.25rem;
-			letter-spacing: -0.5rem;
-			line-height: 5rem;
-			margin-bottom: 1rem;
-		}
-	}
-	#about {
-		h2 {
-			font-size: 3rem;
-			line-height: 2.75rem;
-			margin-left: 0;
-			text-indent: 0;
-		}
-	}
-	#work {
-		h2 {
-			font-size: 3rem;
-			line-height: 2.75rem;
-			margin-left: 0;
-			text-indent: 0;
-		}
+.outside {
+	color: $yellow;
+	font-family: $font-family-serif;
+	font-weight: 900;
+	line-height: 1em;
+	text-shadow: 
+		-1px -1px $black, 
+		1px 1px $black, 
+		2px 2px $yellow, 
+		0.1rem 0.1rem $red,
+		0.15rem 0.15rem $red,
+		0.2rem 0.2rem $red,
+		0.25rem 0.25rem $red,
+		0.3rem 0.3rem $red,
+		0.35rem 0.35rem $red,
+		0.4rem 0.4rem $red,
+		0.45rem 0.45rem $red,
+		0.5rem 0.5rem $red;
+	a {
+		@extend .outside;
 	}
 }
