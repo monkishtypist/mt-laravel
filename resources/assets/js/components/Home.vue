@@ -16,17 +16,34 @@
             </div>
         </header>
         <div class="row justify-content-between">
-            <div class="col-xs-12 col-md-6 col-lg-7">
+            <div class="col-xs-12 col-md-6 col-lg-6">
                 <section class="soft-skillz">
                     <h2 class="">Amazing Soft Skills!</h2>
                     <ul class="list-unstyled">
-                        <li class=""><span class="hilite">Team leader</span></li>
-                        <li class=""><span class="hilite">Self starter</span></li>
-                        <li class=""><span class="hilite">Problem solver</span></li>
-                        <li class=""><span class="hilite">Critical thinker</span></li>
+                        <li class=""><span class="hilite">Leadership</span></li>
+                        <li class=""><span class="hilite">Self-motivated</span></li>
+                        <li class=""><span class="hilite">Problem solving</span></li>
+                        <li class=""><span class="hilite">Critical thinking</span></li>
+                        <li class=""><span class="hilite">Organization</span></li>
+                        <li class=""><span class="hilite">Customer Support</span></li>
                     </ul>
                 </section>
-                
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-5">
+                <section id="hard-skillz" class="text-md-right">
+                    <h2 class="inverse">Talented Hard Skills</h2>
+                    <ul class="list-unstyled">
+                        <li class=""><span class="hilite">PHP, Angular, Laravel, Vue</span></li>
+                        <li class=""><span class="hilite">MySQL, PostgreSQL, and other Databases</span></li>
+                        <li class=""><span class="hilite">Version control: Git, SVN</span></li>
+                        <li class=""><span class="hilite">Google Analytics</span></li>
+                        <li class=""><span class="hilite">WordPress plugin development</span></li>
+                        <li class=""><span class="hilite">Custom API integrations</span></li>
+                        <li class=""><span class="hilite">And so much more...</span></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-6">
                 <section id="work">
                     <h2 class="inverse">Excellent Work!</h2>
                     <ul class="list-unstyled">
@@ -54,21 +71,9 @@
                     </ul>
                 </section>
             </div>
-            <div class="col-xs-12 col-md-6 col-lg-4">
-                <section id="hard-skillz">
-                    <h2 class="inverse">Talented Hard Skills</h2>
-                    <ul class="list-unstyled">
-                        <li class=""><span class="hilite">PHP, Angular, Laravel, Vue</span></li>
-                        <li class=""><span class="hilite">MySQL, PostgreSQL, and other Databases</span></li>
-                        <li class=""><span class="hilite">Version control: Git, SVN</span></li>
-                        <li class=""><span class="hilite">Google Analytics</span></li>
-                        <li class=""><span class="hilite">WordPress plugin development</span></li>
-                        <li class=""><span class="hilite">Custom API integrations</span></li>
-                        <li class=""><span class="hilite">And so much more...</span></li>
-                    </ul>
-                </section>
-                <section id="about">
-                    <h2>Who is this guy anyway?</h2>
+            <div class="col-xs-12 col-md-6 col-lg-5">
+                <section id="about" class="text-md-right">
+                    <h2>Who is Monkish Typist?</h2>
                     <div class="row">
                         <div class="col-sm-12">
                             <p><span class="hilite">An amazing backend developer, that's who! Tim has been developing web applications and custom integrations for nearly a decade. Self-taught, self-motivated, and self-sufficient!</span></p>

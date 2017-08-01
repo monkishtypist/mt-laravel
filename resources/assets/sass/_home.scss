@@ -145,9 +145,7 @@
 				0 -1px $black;
 		}
 	}
-}
-@media screen and (max-width: map-get($grid-breakpoints, lg)) {
-	#home {
+	@media screen and (max-width: map-get($grid-breakpoints, lg)) {
 		header {
 			h1 {
 				font-size: 8.5rem;
@@ -173,9 +171,7 @@
 			}
 		}
 	}
-}
-@media screen and (max-width: map-get($grid-breakpoints, md)) {
-	#home {
+	@media screen and (max-width: map-get($grid-breakpoints, md)) {
 		header {
 			h1 {
 				font-size: 6rem;
@@ -203,9 +199,7 @@
 			}
 		}
 	}
-}
-@media screen and (max-width: map-get($grid-breakpoints, sm)) {
-	#home {
+	@media screen and (max-width: map-get($grid-breakpoints, sm)) {
 		header {
 			h1 {
 				font-size: 5.25rem;

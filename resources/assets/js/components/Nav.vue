@@ -9,7 +9,7 @@
             <ul>
                 <li class="outside"><a v-on:click.prevent="changeView('home')" href="#">Home</a></li>
                 <li class="anaglyph-dark"><i><a v-on:click.prevent="changeView('about')" href="#">About</a></i></li>
-                <li><a v-on:click.prevent="changeView('work')" href="#">Work</a></li>
+                <li class="work"><a v-on:click.prevent="changeView(view)" href="#">Work</a></li>
                 <li><a href="https://github.com/monkishtypist/" class="" target="_blank"><img src="../../images/GitHub-Mark-Light-64px.png" alt="GitHub" class=""></a></li>
             </ul>
         </div>
@@ -18,6 +18,7 @@
 
 <script>
     export default {
+        props: ['view'],
         data: function() {
             return {
                 isActive: false,
@@ -38,13 +39,13 @@
             },
             changeView(view) {
                 this.$emit('change-view', view),
-                this.toggleNav(),
-                console.log(view)
+                this.toggleNav()
             }
         },
         mounted() {
-            console.log('Nav component mounted.')
-        }
+            console.log('Nav component mounted.'),
+            console.log(this.view)
+        },
     }
 </script>
 

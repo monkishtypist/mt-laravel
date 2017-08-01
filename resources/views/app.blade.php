@@ -11,7 +11,7 @@
 @section('content')
 <div id="app" :class="currentView">
 
-	<app-nav v-on:change-view="changeView"></app-nav>
+	<app-nav v-on:change-view="changeView" :view="currentView"></app-nav>
 
 	<transition name="component-fade" mode="out-in">
 		<component :is="currentView" v-on:change-view="changeView" :view="currentView"></component>

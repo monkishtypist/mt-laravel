@@ -89,6 +89,29 @@
 						text-decoration: underline;
 					}
 				}
+				&.work {
+					a {
+						color: $green;
+						position: relative;
+						&:hover {
+							color: $green;
+							&:after {
+								color: $yellow;
+								content: "coming soon!";
+								display: block;
+								font-size: 3rem;
+								left: 50%;
+								margin-left: -131px;
+								position: absolute;
+								text-decoration: underline;
+								text-shadow: 1px 0 $red, 0 1px $blue, -1px 0 $blue, 0 -1px $red;
+								top: 1rem;
+								transform: rotate(-8deg);
+								white-space: nowrap;
+							}
+						}
+					}
+				}
 			}
 		}
 	}
