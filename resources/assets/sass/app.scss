@@ -1,19 +1,9 @@
 
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700,900|Playfair+Display|Roboto+Condensed:400,400i,700');
-@import "node_modules/font-awesome/scss/font-awesome";
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
 
 // Variables
 @import "variables";
 
 // Bootstrap
-// @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
-@import "node_modules/bootstrap/scss/bootstrap";
-
-// Custom CSS
-@import "custom";
-@import "nav";
-@import "home";
-@import "about";
-@import "work";
-@import "footer";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";

@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/{vue?}', function () {
-    return view('app');
-})->where('vue', '^(?!.*api).*$[\/\w\.-]*');
+Route::get('/', function () {
+    return view('welcome');
+});
