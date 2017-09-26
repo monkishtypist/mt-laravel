@@ -1,0 +1,16 @@
+li {
+	border-radius: 12px;
+	display: block;
+	margin-bottom: 1rem;
+	padding: 1rem;
+	width: fit-content;
+	&.text-left {
+		background-color: #E6E5EB;
+		margin-right: auto;
+	}
+	&.text-right {
+		background-color: #41CF2D;
+		color: $white;
+		margin-left: auto;
+	}
+}
